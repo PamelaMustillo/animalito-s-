@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{        //padre de los elementos div dentro del header//            
+    background-image: url(img/fondo6.jpg);
+    line-height: 28px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+//boton del nav//
+.fas {
+    font-size: 34px;
+    color: mediumpurple;
+    text-transform: capitalize;
+}
+.form-control:focus{
+    background-color:rgb(253, 242, 190);
+}
+
+.nav-item:hover{
+    background-color:paleturquoise;
+    border-radius: 20px;
+}
+.dropdown-item:hover{
+    background-color: rgb(255, 149, 255);
+}
+//fin de nav//
+.logo{
+    width: 150px;
+    border-radius:30px;
+    transform:rotateZ(-30deg)
+}
+#inicio{
+    color:cornflowerblue;
+    font-size: 33px;
+    text-transform: capitalize;
+    align-content: flex-start;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+//carrusel//
+.carousel-indicators li {
+    border-radius:50%;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+}
+//contenedora//
+.contenedora1{
+    display: grid;
+    grid-template-areas: "flex1 flex2 flex3";
+    grid-gap:10px;
+    justify-content: space-around;
+    background-color:rgb(201, 176, 250);
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.metodo{
+    width:180px;
+}
+//-------------------------------------------------------sections------------------------------------------------------------//
+.section1{
+    background:linear-gradient(rgb(255, 255, 128),rgb(249, 250, 178),rgb(252, 253, 186),rgb(189, 171, 226),mediumpurple,rgb(127, 88, 204));
+    display:grid;
+    grid-gap:12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.section2{
+    background: linear-gradient(rgb(85, 116, 209), rgb(149, 172, 241),rgb(166, 185, 240),rgb(214, 222, 247));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.seccion-consejos{
+    background-color:plum;
+    margin-bottom: 10px;
+}
+.section3{ 
+    background: linear-gradient(rgb(50, 192, 178), rgb(100, 230, 217), rgb(172, 241, 235),rgb(191, 247, 247), rgb(226, 250, 248));
+    margin-bottom: 20px;
+}
+
+
+.section4{
+    background:linear-gradient(rgb(255, 204, 110),rgb(255, 217, 147),rgb(255, 215, 140),rgb(253, 219, 154),rgb(255, 239, 208));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section.v{
+    background-color:mediumaquamarine;
+}
+.section5{
+    background: linear-gradient(rgb(125, 216, 216),rgb(125, 216, 216),rgb(155, 237, 237),rgb(177, 241, 241),rgb(204, 240, 240));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+//section 1//
+.productosTransition{
+    background-color:rgb(255, 255, 128) ;
+    text-align: center;
+    font-size: 25px;
+}
+#productos{
+    transition: all 5s;
+}
+#productos:hover{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.section1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 202, 196);
+}
+section img:hover {
+    transform: scale(1.2)
+}
+.boton{
+    padding: 10px;
+    background-color:turquoise;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.boton:hover{
+    text-decoration: none;
+    color: darkslateblue;
+}
+.pretal{
+    margin-top: 10px;
+}
+#perro{
+    text-align: center;
+    background-color: mediumpurple;
+    color: rgb(255, 255, 128);
+    text-transform: capitalize;
+    font-size: 26px;
+    height: 45px;
+}
+#gato{
+    text-align: center;
+    background-color:rgb(255, 255, 128) ;
+    color: mediumpurple;
+    text-transform: capitalize;
+    font-size: 26px;
+    height: 45px;
+    margin-top: 10px;
+}
+//section 2//
+.adiestramientoTransition{
+    background-color: rgb(85, 116, 209);
+    font-size: 25px;
+    text-align: center;
+}
+#adiestramiento{
+    transition:all 5s;
+}
+#adiestramiento:hover{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.parrafoAdis{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.formulario1{
+    display: flex;
+    flex-direction:column;
+    align-self:center;
+    width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+} 
+legend{
+    font-size:20px;
+    text-align: center;
+}
+.mascota{
+    font-size: 23px;
+    text-align: center;
+}
+.tamaño{
+    text-align: center;
+    font-size: 22px;
+}
+.option{
+    text-align: center;
+}
+.s{
+    text-align: center;
+    font-size: 22px;
+}
+.s1{
+    text-align: center;
+    font-size: 22px;
+}
+.s2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.titular{
+    font-size:23px;
+    text-align: center;
+}
+.turno{
+    margin-top:5px;
+    text-align: center;
+    font-size: 22px;
+    white-space: pre-line;
+}
+.turno input{
+    width:600px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.acepta{
+    text-align: center;
+    font-size: 22px;
+}
+
+.enviar input{
+    font-size: 22px;
+    width:150px;
+    height: 50px;
+    border-radius: 15px;
+    border-color:lightskyblue;
+    background-color: lavender;
+}
+
+//seccion consejos//
+.consejosTransition{
+    background-color:rgb(218, 112, 218) ;
+    text-align: center;
+    font-size: 25px;
+}
+#consejos{
+    transition: all 5s;
+}
+#consejos:hover{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.grid-container{
+    display: grid;
+    text-align: center;
+    grid-gap:10px;
+    grid-template-areas:"tip1 tip2 tip3";
+}
+.animal1{
+    width:120px;
+    border-radius: 60px;
+}
+.tip1{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.tip2{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.tip3{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.tip4{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.tip5{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.tip6{
+    border:4px solid white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.t1{
+    font-size: 20px;
+    
+}
+//section 3//
+.experienciaTransition{
+    background-color: rgb(50, 192, 178);
+    font-size: 25px;
+    text-align: center;
+}
+#experiencia{
+    transition: all 5s;
+}
+#experiencia:hover{
+    color:whitesmoke;
+    font-size:30px;
+}
+h5{
+    text-align:left;
+}
+.habilidades{
+    text-align:left;
+}
+.contenedora2{
+    display:flex;
+    flex-direction: row;
+}
+.parrafo-item1{
+    margin-top: 20px;
+}
+.habilidades1{
+    justify-self: flex-end;
+}
+.avatar{
+    border-radius: 200px;
+    align-self: center;
+    margin-left: 10px;
+}
+//section 4//
+.mayoristasTransition{
+    background-color: rgb(255, 204, 110);
+    font-size: 25px;
+    text-align: center;
+}
+#mayoristas{
+    transition: all 5s;
+}
+#mayoristas:hover{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.parrafoMay{
+    text-align: center;
+}
+.titulo3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.iframe{
+    display: flex;
+    flex-direction: row;
+    align-self:center;    
+}
+
+//seccion videos//
+.videosTransition{
+    text-align: center;
+    font-size: 25px;
+    background-color:rgb(85, 204, 164) ;
+    color:black;
+}
+#videos{
+    transition: all 5s;
+}
+#videos:hover{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.grid-container-1{
+    display: grid;
+    grid-gap:10px;
+    grid-template-areas: "video1 video2 video3"
+    "video1 video4 video5"
+    "video6 video6 video6";
+    justify-items:start;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+//seccion contacto//
+.contactoTransition{
+    text-align: center;
+    font-size: 25px;
+    background-color:rgb(125, 216, 216) ;
+    color:black;
+}
+#contacto{
+    transition: all 5s;
+}
+#contacto:hover{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.formulario2{
+    display: flex;
+    flex-direction:column;
+    align-self:center;
+    align-items: center;
+    width: 900px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom:10px;
+    margin-top: 10px;
+    white-space: pre-line;
+
+}
+.nombre input{
+    text-align: center;
+    margin-top: 10px;
+    border-color: #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width:700px;
+}
+.nombre input:focus{
+    background-color:lightcyan;
+}
+.apellido{
+    text-align: center;
+    font-size: 22px;
+    white-space: pre-line;
+}
+.apellido input{
+    text-align: center;
+    margin-bottom: 10px;
+    border-color: #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 700px;
+}
+.apellido input:focus{
+    background-color: lightcyan;
+}
+.email{
+    text-align: center;
+    font-size: 22px;
+    white-space: pre-line;
+}
+.email input{
+    text-align: center;
+    margin-bottom: 10px;
+    border-color:#ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 700px;
+}
+.email input:focus{
+    background-color: lightcyan;
+}
+.option{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color:#ccc;
+    width: 200px;
+    font-size: 22px;
+}
+.texttarea{
+    border-radius: 5px;
+    border-color: #ccc;
+    width:700px;
+}
+.enviar{
+    font-size: 22px;
+    width:150px;
+    height: 50px;
+    border-radius: 15px;
+    border-color:lightskyblue ;
+    background-color: lavender;
+}
+
+//medios de pago//
+.mediosDepago{
+    background-color:rgb(243, 239, 232);
+    text-align:center;
+}
+.titulo2{
+    text-align: center;
+}
+// whatsapp //
+.wpp{
+    height: 50px;
+    width: 50px;
+    position:fixed;
+    bottom:50px;
+    right: 50px;
+    color:rgb(37, 79, 158);
+    font-size: 60px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+//pie de pagina//
+footer{ 
+    background-image:url(img/fondo6.jpg);
+    line-height: 50px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fa-facebook{
+    font-size: 28px;
+    color: blue;
+}
+.fa-instagram{
+    font-size: 28px;
+    color:black;
+}
+//tienda//
+.contenedora{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    align-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+.parrafo1{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.boton2{
+    align-self: center;
+    background-color:lightcyan;
+    color:black;
+    padding: 12px;
+    margin: 10px;
+    border-color:lightseagreen;
+    width:750px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.direccion{
+    white-space:pre-line;
+}
+.pago{
+    flex-direction:row;
+    white-space: pre-line;
+}
+.checkbox{
+    white-space: pre-wrap;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+//each//
+$colores:indigo,
+darkturquoise,
+orangered,
+mediumslateblue;
+
+@each $color in $colores{
+    .color-#{$color} {
+        font-size: 20px + 5px;
+        color: $color;
+    }
+}
+//------------------------responsive-------------------------------------------//
+@media only screen and (max-width:768px){
+    .logo{
+        width: 70px;
+    }
+    #inicio{
+        font-size:20px;
+    } 
+    .flex-item1{
+        display:flex;
+        flex-direction: column;
+    }
+    .flex-item2 nav ul{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .section1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    .section1 img{
+        flex-direction: column;
+        align-self: center;
+    }
+    .producto-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iframe{
+        width: 50%;
+        height: 50%;
+    }
+    .wpp{
+        height: 25px;
+        width: 25px;
+        font-size: 50px;
+        text-align: right;
+        bottom:25px;
+        right: 25px;
+        line-height: 25px;
+    }
+    //contenedora//
+    .contenedora1{
+    display: grid;
+    grid-template-areas: "flex1";
+    grid-gap:10px;
+    background-color:rgb(201, 176, 250);
+    margin-top: 10px;
+    border-radius: 15px;
+    }
+    .metodo{
+    width:150px;
+    justify-self: center;
+    }
+    .texto{
+        text-align: center;
+    }
+
+    //seccion3//
+    h5{
+        text-align:center;
+    }
+    .habilidades{
+        text-align:center;
+    }
+    .section3-p1{
+        text-align: center;
+    }
+    .contenedora2{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .parrafo-item1{
+        margin-top: 20px;
+    }
+    .avatar{
+        border-radius: 200px;
+        align-self: center;
+        margin-top: 10px;
+    }
+    //--------------------------formulario 1------------------------------------//
+    .formulario1{
+        display: flex;
+        flex-direction:column;
+        align-self:center;
+        width: 305px;
+        background-color: white;
+        border-radius: 10px;
+    } 
+    legend{
+        font-size:20px;
+        text-align: center;
+    }
+    .mascota{
+        font-size: 19px;
+        text-align: center;
+    }
+    .tamaño{
+        text-align: center;
+        font-size: 18px;
+    }
+    .option{
+        font-size: 17px;
+        border-radius:5px;
+        text-align: center;
+    }
+    .s{
+        text-align: center;
+        font-size: 18px;
+    }
+    .s1{
+        text-align: center;
+        font-size: 17px;
+    }
+    .s2{
+        text-align: center;
+        font-size: 17px;
+    }
+    .titular{
+        font-size:19px;
+        text-align: center;
+    }
+    .turno{
+        margin-top:5px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .turno input{
+        width:300px;
+        margin-bottom: 5px;
+    }
+    .acepta{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .enviar input{
+        font-size: 16px;
+        margin-top:8px;
+        width:80px;
+        height:40px;
+        border-radius: 15px;
+        border-color:lightskyblue;
+        background-color: lavender;
+    }
+    //---------------------formulario 2 -------------------------//
+    .formulario2{
+        display: flex;
+        flex-direction:column;
+        align-self:center;
+        align-items: center;
+        width: 305px;
+        background-color:white;
+        border-radius: 10px;
+    }
+    
+    .nombre{
+        text-align: center;
+        font-size: 18px;
+    }
+    .nombre input{
+        margin-bottom: 10px;
+        border-color: #ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .nombre input:focus{
+        background-color:lightcyan;
+    }
+    .apellido{
+        text-align: center;
+        font-size: 18px;
+    }
+    .apellido input{
+        margin-bottom: 10px;
+        border-color: #ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .apellido input:focus{
+        background-color: lightcyan;
+    }
+    .email{
+        text-align: center;
+        font-size: 18px;
+    }
+    .email input{
+        margin-bottom: 10px;
+        border-color:#ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .email input:focus{
+        background-color: lightcyan;
+    }
+    .option{
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-color:#ccc;
+        width: 100px;
+        font-size: 15px;
+    }
+    .texttarea{
+        border-radius: 5px;
+        border-color: #ccc;
+        width: 300px;
+    }
+    .enviar{
+        font-size: 16px;
+        width: 80px;
+        height: 40px;
+        border-radius: 15px;
+        border-color:lightskyblue;
+        background-color: lavender;
+    }
+    //seccion consejos y tips//
+    .grid-container{
+        display: grid;
+        text-align: center;
+        grid-gap:10px;
+        grid-template-areas:"tip1";
+    }
+    .animal1{
+        width:120px;
+        border-radius: 60px;
+    }
+    .tip1{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .tip2{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .tip3{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .tip4{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+    .tip5{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .tip6{
+        border:4px solid white;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    //seccion videos//
+    .videosTransition{
+    text-align: center;
+    font-size: 25px;
+    background-color:rgb(85, 204, 164) ;
+    color:black;
+    }
+    #videos{
+    transition: all 5s;
+    }
+    #videos:hover{
+    color:whitesmoke;
+    font-size: 30px;
+    }
+    .grid-container-1{
+    display: grid;
+    grid-gap:10px;
+    grid-template-areas: "video1";
+    justify-items:start;
+    align-items: flex-end;
+    justify-content: center;
+    }
+    .v1{
+    width:200px;
+    height: 200px;
+    }
+    //tienda//
+    .contenedora{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    align-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    }
+    .parrafo1{
+    font-size: 17px;
+    text-transform: capitalize;
+    }
+    .boton2{
+    align-self: center;
+    background-color:lightcyan;
+    color:black;
+    padding: 12px;
+    margin: 10px;
+    border-color:lightseagreen;
+    width:300px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    }
+    .direccion{
+    white-space:pre-line;
+    }
+    .pago{
+    flex-direction:row;
+    white-space: pre-line;
+    }
+    .checkbox{
+    white-space: pre-wrap;
+    }
+    .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    white-space: nowrap;
+    }
+}

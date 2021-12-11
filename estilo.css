@@ -96,10 +96,10 @@ body {
 .contenedora1 {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "flex1 flex2 flex3";
+  grid-template-areas: "flex1 flex2 flex3";
   grid-gap: 10px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-color: #c9b0fa;
   margin-top: 10px;
   border-radius: 15px;
@@ -185,6 +185,7 @@ body {
   background-color: #ffff80;
   text-align: center;
   font-size: 25px;
+  text-transform: capitalize;
 }
 
 #productos {
@@ -193,7 +194,7 @@ body {
 }
 
 #productos:hover {
-  color: whitesmoke;
+  color:mediumpurple;
   font-size: 30px;
 }
 
@@ -249,6 +250,7 @@ section img:hover {
   background-color: #5574d1;
   font-size: 25px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 #adiestramiento {
@@ -257,7 +259,7 @@ section img:hover {
 }
 
 #adiestramiento:hover {
-  color: whitesmoke;
+  color: lightblue;
   font-size: 30px;
 }
 
@@ -356,6 +358,7 @@ legend {
   background-color: #da70da;
   text-align: center;
   font-size: 25px;
+  text-transform: capitalize;
 }
 
 #consejos {
@@ -364,7 +367,7 @@ legend {
 }
 
 #consejos:hover {
-  color: whitesmoke;
+  color:purple;
   font-size: 30px;
 }
 
@@ -429,6 +432,7 @@ legend {
   background-color: #32c0b2;
   font-size: 25px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 #experiencia {
@@ -437,7 +441,7 @@ legend {
 }
 
 #experiencia:hover {
-  color: whitesmoke;
+  color:rgb(0, 110, 110);
   font-size: 30px;
 }
 
@@ -479,6 +483,7 @@ h5 {
   background-color: #ffcc6e;
   font-size: 25px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 #mayoristas {
@@ -487,7 +492,7 @@ h5 {
 }
 
 #mayoristas:hover {
-  color: whitesmoke;
+  color:tomato;
   font-size: 30px;
 }
 
@@ -515,8 +520,9 @@ h5 {
 .videosTransition {
   text-align: center;
   font-size: 25px;
-  background-color: #55cca4;
+  background-color: #4dd1a5;
   color: black;
+  text-transform: capitalize;
 }
 
 #videos {
@@ -525,7 +531,7 @@ h5 {
 }
 
 #videos:hover {
-  color: whitesmoke;
+  color:#096848;
   font-size: 30px;
 }
 
@@ -533,7 +539,9 @@ h5 {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-      grid-template-areas: "video1 video2 video3" "video1 video4 video5" "video6 video6 video6";
+      grid-template-areas: "video1 video2 video3"
+ "video1 video4 video5"
+ "video6 video6 video6";
   justify-items: start;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -548,6 +556,7 @@ h5 {
   font-size: 25px;
   background-color: #7dd8d8;
   color: black;
+  text-transform: capitalize;
 }
 
 #contacto {
@@ -556,7 +565,7 @@ h5 {
 }
 
 #contacto:hover {
-  color: whitesmoke;
+  color:rgb(0, 150, 243);
   font-size: 30px;
 }
 

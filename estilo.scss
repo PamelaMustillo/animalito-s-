@@ -652,7 +652,7 @@ mediumslateblue;
     //contenedora//
     .contenedora1{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     background-color:rgb(201, 176, 250);
     margin-top: 10px;
@@ -661,6 +661,10 @@ mediumslateblue;
     .metodo{
     width:150px;
     justify-self: center;
+    }
+    .flex1,.flex2,.flex3{
+        display: flex;
+        flex-direction: column;
     }
     .texto{
         text-align: center;
@@ -696,7 +700,7 @@ mediumslateblue;
         display: flex;
         flex-direction:column;
         align-self:center;
-        width: 305px;
+        width:400px;
         background-color: white;
         border-radius: 10px;
     } 
@@ -739,7 +743,7 @@ mediumslateblue;
         font-size: 18px;
     }
     .turno input{
-        width:300px;
+        width:350px;
         margin-bottom: 5px;
     }
     .acepta{
@@ -762,7 +766,7 @@ mediumslateblue;
         flex-direction:column;
         align-self:center;
         align-items: center;
-        width: 305px;
+        width:400px;
         background-color:white;
         border-radius: 10px;
     }
@@ -1008,6 +1012,10 @@ mediumslateblue;
     align-self: center;
     width:150px;
     justify-self: center;
+    }
+    .flex1,.flex2,.flex3{
+        display: flex;
+        flex-direction: column;
     }
     .texto{
         text-align: center;
